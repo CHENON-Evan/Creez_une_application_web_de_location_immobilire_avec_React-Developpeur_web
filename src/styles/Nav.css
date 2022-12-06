@@ -1,14 +1,26 @@
 .nav {
-    border: solid 3px black;
     justify-content: flex-end;
 }
 
 .nav a{
     font-size: 24px;
     color: #FF6060;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    text-decoration: underline;
 }
 
 .about{
-    text-decoration: none;
     margin-left: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .nav a{
+      font-size: 16px;
+    }
+    .about{
+        margin-left: 16px;
+    }
 }

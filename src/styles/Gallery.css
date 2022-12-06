@@ -1,12 +1,18 @@
 .gallery {
-    border: 3px solid black;
-    border-radius: 25px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 38px;
-    padding-right: 38px;
-    background: #F7F7F7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-inline: 100px;
+  padding-left: 38px;
+  padding-right: 38px;
+  background: #f7f7f7;
+}
+
+@media screen and (max-width: 1050px) {
+  .gallery {
+    margin-inline: 50px;
+    background-color: white;
+    padding: 0;
+  }
 }

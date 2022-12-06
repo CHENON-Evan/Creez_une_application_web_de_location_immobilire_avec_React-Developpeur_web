@@ -1,0 +1,19 @@
+.tags {
+    display: flex;
+    margin-left: 100px;
+    color: #ff6060;
+}
+
+.tag{
+    border-radius: 10px;
+    background-color: #FF6060;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    height: 25px;
+}
+
+.tag__name{
+    font-size: 14px;
+}

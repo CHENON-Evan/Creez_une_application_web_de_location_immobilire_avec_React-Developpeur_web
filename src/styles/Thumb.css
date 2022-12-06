@@ -1,10 +1,8 @@
 .thumb {
-  border: 3px solid black;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  text-transform: capitalize;
   max-width: 340px;
   height: 340px;
   margin: 20px 20px;
@@ -21,8 +19,27 @@
 .thumb-name {
   position: absolute;
   color: white;
-  width: 340px;
-  height: 110px;
-  font-size: 24px;
+  width: 250px;
+  font-size: 19px;
   margin-top: 240px;
+  margin-inline: 16px;
+}
+
+.filter {
+  width: 340px;
+  height: 340px;
+  position: absolute;
+  border-radius: 8px;
+  background: linear-gradient(rgba(7, 7, 7, 0), rgba(7, 7, 7, 0.3));
+}
+
+@media screen and (max-width: 1050px) {
+  .thumb {
+    width: 83vw;
+    max-width: 100%;
+  }
+  
+  .filter{
+    width: 83vw;
+  }
 }

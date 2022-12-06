@@ -1,0 +1,25 @@
+.error__title{
+color: #FF6060;
+font-family: Montserrat;
+font-size: 288px;
+font-weight: 700;
+line-height: 411px;
+text-align: center;
+}
+
+.detail{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 182px;
+}
+
+.link__home{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 169px;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+}

@@ -12,7 +12,7 @@ const About = () => {
     return (
         <>
             <Header/>
-            <img src={coverAbout} alt="cover-about" className="coverAbout"/>
+            <img src={coverAbout} alt="cover__about" className="coverAbout"/>
             <div className="body about">
                 <div className="website-title"><h1> </h1></div>
                 <Dropdown title="Fiabilité" item={reliability} sizeClass="large" />

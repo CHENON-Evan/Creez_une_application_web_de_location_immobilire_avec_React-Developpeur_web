@@ -1,3 +1,20 @@
-title{
-    text-decoration: none;
+.title{
+    margin-left: 100px;
+    margin-bottom: 0px;
+    color: #FF6060;
+}
+
+ul{
+    margin-top: 0px;
+}
+
+.description__equipements {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 100px;
+    margin-top: 35px;
+}
+
+.title__name__picture{
+    display: flex;
 }

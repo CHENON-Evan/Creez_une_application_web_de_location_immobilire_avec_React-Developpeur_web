@@ -1,17 +1,24 @@
 .header {
-    color: black;
-    border: solid 3px black;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 40px;
-    margin-inline: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-inline: 100px;
 }
 
 .logo {
-    border: solid 3px black;
-    display: flex;
-    height: 68px;
-    width: 211px;
+  display: flex;
+  height: 68px;
+  width: 211px;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    margin-inline: 50px;
+  }
+
+  .logo {
+    width: 122px;
+    height: 39.5px;
+  }
 }

@@ -12,11 +12,11 @@ const Dropdown = (props) => {
     }
     return (
         <div className={`dropdown${props.sizeClass ? ' dropdown--' + props.sizeClass : ''}`}>
-            <Link to="#" className="dropdown__header" onClick={handleClick}>
-                <span className="dropdown__name">{props.title}</span>
+            <Link to="#" className="dropdown__header__location" onClick={handleClick}>
+                <span className="dropdown__name__location">{props.title}</span>
                 <FontAwesomeIcon {...isContentVisible ? {icon: faAngleUp} : {icon: faAngleDown}} />
             </Link>
-            <div className="dropdown__content" style={{display: isContentVisible ? 'block' : 'none' }}>
+            <div className="dropdown__content__location" style={{display: isContentVisible ? 'block' : 'none' }}>
                 {
                     props.item ? <p>{props.item}</p> : <DropdownContent items={props.items} />
                 }
