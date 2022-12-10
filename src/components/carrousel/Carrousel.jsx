@@ -1,5 +1,6 @@
 import '../../styles/Carrousel.css';
-import vector from '../../assets/Vector.png';
+import vectorleft from '../../assets/Vector-left.png';
+import vectorright from '../../assets/Vector-right.png';
 
 import { useState } from 'react';
 
@@ -23,22 +24,10 @@ const Carrousel = ({ slides }) => {
   return (
     <div className="carrousel">
       <div className="slider">
-        <div>
-          <div onClick={goToPrevious} className="left-arrow">
-            <img
-              className={toggle ? 'vector rotated' : 'vector'}
-              src={vector}
-              alt="vector"
-            />
+          <div className="arrow">
+            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorright} alt="vector" onClick={goToPrevious} />
+            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorleft} alt="vector" onClick={goToNext} />
           </div>
-          <div onClick={goToNext} className="right-arrow">
-            <img
-              className={toggle ? 'vector rotated' : 'vector'}
-              src={vector}
-              alt="vector"
-            />
-          </div>
-        </div>
         <div className="slide" style={slideStylesWidthBackground}>
           <span className="carrousel-index">
             {currentIndex + 1}/{slides.length}

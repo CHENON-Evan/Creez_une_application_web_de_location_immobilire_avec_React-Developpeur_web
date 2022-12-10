@@ -12,9 +12,10 @@ const About = () => {
     return (
         <>
             <Header/>
+            <div className="title__image">
             <img src={coverAbout} alt="cover__about" className="coverAbout"/>
-            <div className="body about">
-                <div className="website-title"><h1> </h1></div>
+            </div>
+            <div className="body__about">
                 <Dropdown title="Fiabilité" item={reliability} sizeClass="large" />
                 <Dropdown title="Respect" item={respect} sizeClass="large" />
                 <Dropdown title="Service" item={service} sizeClass="large" />

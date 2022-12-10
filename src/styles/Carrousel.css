@@ -25,31 +25,21 @@
   color: #ffffff;
 }
 
-.left-arrow {
+.arrow {
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 150px;
-  font-size: 45px;
-  color: #fff;
-  z-index: 1;
-  cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 150px;
-  font-size: 45px;
-  color: #fff;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.right-arrow img {
+.arrow img {
   transform: rotate(180deg);
   transition: 0.4s ease-in-out;
+  height: 50px;
 }
 
 .slide {
@@ -64,33 +54,22 @@
 
 .slider {
   position: relative;
+  margin-inline: 100px;
   height: 415px;
 }
 
-.host {
-  display: flex;
-  margin-left: 1210px;
-  margin-right: 100px;
-  margin-top: -130px;
-}
-
-.host__name {
-  color: #ff6060;
-}
-
-.host__picture img {
-  border-radius: 75px;
-  width: 64px;
-}
-
-@media screen and (max-width: 550px) {
-  .carrousel img {
-    font-size: 2.2rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.9);
+@media screen and (max-width: 700px) {
+  .slider{
+    margin-inline: 25px;
   }
-  .carrousel img {
-    font-size: 4rem;
-    color: white;
+
+  .left-arrow{
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slider{
+    margin-inline: 0px;
   }
 }

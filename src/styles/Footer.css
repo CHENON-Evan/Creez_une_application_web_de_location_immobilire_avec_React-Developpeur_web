@@ -15,29 +15,17 @@
   height: 39.5px;
 }
 
-.footer p {
-  color: white;
-}
-
 .footer__copyright {
   margin-bottom: 10px;
   font-size: 24px;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 700px) {
   .footer {
-      width: 375px;
-      height: 209px;
+    width: 100%;
   }
 
-  .footer img {
-      height: 39.44px;
-      width: 150px;
-      margin-top: 66px;
-      margin-left: 100px;
+  .footer__copyright {
+    font-size: 12px;
   }
-
-  .footer p {
-      font-size: 12px;
-      }
 }

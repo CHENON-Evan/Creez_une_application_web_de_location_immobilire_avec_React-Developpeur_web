@@ -1,5 +1,11 @@
 .rating{
-    margin-right: 100px;
-    margin-left: 1200px;
+    display: flex;
+    width: 130px;
     color: #FF6060
 }
+
+@media screen and (max-width: 700px) {
+    .rating{
+        display: flex;
+    }
+  }

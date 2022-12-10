@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-inline: 100px;
 }
 
@@ -20,5 +20,11 @@
   .logo {
     width: 122px;
     height: 39.5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    margin-inline: 20px;
   }
 }

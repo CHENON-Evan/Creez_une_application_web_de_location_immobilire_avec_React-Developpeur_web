@@ -1,12 +1,14 @@
 .dropdown__header{
     display: flex;
     margin-inline: auto;
-    border-radius: 2px;
+    border-radius: 5px;
     background-color: #FF6060;
     margin-top: 15px;
     max-width: 1023px;
     text-decoration: none;
     color: white;
+    align-items: center;
+    height: 47px;
 }
 
 .dropdown__name{
@@ -20,7 +22,7 @@
     display: flex;
     margin-inline: auto;
     margin-top: 0px;
-    width: 1023px;
+    max-width: 1023px;
 }
 
 .dropdown{
@@ -36,7 +38,7 @@
     text-decoration: none;
     color: white;
     max-width: 582px;
-    height: 52px;
+    height: 47px;
 }
 
 .dropdown__name__location{
@@ -51,6 +53,6 @@
     border-radius: 10px;
     margin-top: 0px;
     max-width: 582px;
-    height: 200px;
+    min-height: 200px;
     font-size: 18px;
 }
