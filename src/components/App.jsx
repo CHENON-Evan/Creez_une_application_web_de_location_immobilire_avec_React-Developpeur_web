@@ -1,5 +1,5 @@
 // app.jsx 
-import '../App.css';
+import '../styles/App.css';
 import HomePage from "./pages/HomePage";
 // importe des composnts qui gerer des routes
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
