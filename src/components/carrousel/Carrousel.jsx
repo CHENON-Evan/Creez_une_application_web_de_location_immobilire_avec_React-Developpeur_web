@@ -25,8 +25,8 @@ const Carrousel = ({ slides }) => {
     <div className="carrousel">
       <div className="slider">
           <div className="arrow">
-            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorright} alt="vector" onClick={goToPrevious} />
-            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorleft} alt="vector" onClick={goToNext} />
+            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorright} alt="vector" onClick={goToPrevious} style={{display: slides.length > 1 ? 'block' : 'none' }} />
+            <img className={toggle ? 'vector rotated' : 'vector'} src={vectorleft} alt="vector" onClick={goToNext} style={{display: slides.length > 1 ? 'block' : 'none' }} />
           </div>
         <div className="slide" style={slideStylesWidthBackground}>
           <span className="carrousel-index">

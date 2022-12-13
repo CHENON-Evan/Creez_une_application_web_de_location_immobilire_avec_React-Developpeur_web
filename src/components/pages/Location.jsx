@@ -15,13 +15,21 @@ function Location() {
   const [location, setLocation] = useState(null);
 
   useEffect(() => {
-    locationList.forEach((locationFromList) => {
-      if (locationFromList.id === id) {
-        setLocation(locationFromList);
-        return false;
-      }
-    });
-  }, [id]);
+    const findLocation = () => {
+        let location = null;
+        locationList.forEach((locationFromList) => {
+            if (locationFromList.id === id) {
+                location = locationFromList;
+            }
+        });
+        return location;
+    };
+
+    // Find the current location
+    const currentLocation = findLocation();
+    setLocation(currentLocation);
+
+}, [id]);
 
   if (!location) {
     return <></>;
@@ -57,8 +65,12 @@ function Location() {
           </div>
         </div>
         <div className="description__equipements">
+          <div className='description'>
           <Dropdown title="Description" item={location.description} />
+          </div>
+          <div className='equipements'>
           <Dropdown title="Équipements" items={location.equipments} />
+          </div>
         </div>
       </div>
       <Footer />

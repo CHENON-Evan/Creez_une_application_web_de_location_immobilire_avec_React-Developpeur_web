@@ -11,7 +11,7 @@ const Dropdown = (props) => {
         setIsContentVisible(!isContentVisible);
     }
     return (
-        <div className={`dropdown${props.sizeClass ? ' dropdown--' + props.sizeClass : ''}`}>
+        <div className={`dropdown__location${props.sizeClass ? ' dropdown--' + props.sizeClass : ''}`}>
             <Link to="#" className="dropdown__header__location" onClick={handleClick}>
                 <span className="dropdown__name__location">{props.title}</span>
                 <FontAwesomeIcon {...isContentVisible ? {icon: faAngleDown} : {icon: faAngleUp}} />

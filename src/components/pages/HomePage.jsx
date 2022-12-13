@@ -4,7 +4,6 @@ import BannerHome from "../../assets/nature.png"
 import Banner from "../../components/Banner"
 import Footer from "../Footer";
 import '../../styles/HomePage.css';
-import '../../styles/mobile.css'
 
 function HomePage() {
   return (

@@ -25,7 +25,7 @@
     max-width: 1023px;
 }
 
-.dropdown{
+.dropdown__location{
     width: 100%;
 }
 
@@ -34,25 +34,22 @@
     border-radius: 10px;
     align-items: center;
     background-color: #FF6060;
-    margin-top: 15px;
     text-decoration: none;
     color: white;
-    max-width: 582px;
     height: 47px;
 }
 
 .dropdown__name__location{
     font-size: 18px;
     margin-left: 10px;
-    align-items: center;
 }
 
 .dropdown__content__location{
     background-color: #F6F6F6;
     color: #FF6060;
     border-radius: 10px;
-    margin-top: 0px;
-    max-width: 582px;
+    margin-top: 5px;
+    margin-left: 1px;
     min-height: 200px;
-    font-size: 18px;
+    font-size: 21px;
 }
