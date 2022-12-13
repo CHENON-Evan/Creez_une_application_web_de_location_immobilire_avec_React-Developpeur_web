@@ -2,7 +2,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import Carrousel from '../carrousel/Carrousel';
 import Tag from '../Tag';
-import Dropdown from '../dropdown/DropdownLocation';
+import Dropdown from '../dropdown/Dropdown';
 import Avatar from '../Avatar';
 import Rating from '../Rating';
 import { useParams } from 'react-router-dom';
