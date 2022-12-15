@@ -16,7 +16,7 @@ const Dropdown = (props) => {
                 <span className="dropdown__name">{props.title}</span>
                 <FontAwesomeIcon {...isContentVisible ? {icon: faAngleDown} : {icon: faAngleUp}} />
             </Link>
-            <div className="dropdown__content" style={{display: isContentVisible ? 'none' : 'block' }}>
+            <div className="dropdown__content" style={{display: isContentVisible ? 'none' : 'flex' }}>
                 {
                     props.item ? <p>{props.item}</p> : <DropdownContent items={props.items} />
                 }
